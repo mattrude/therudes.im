@@ -1,5 +1,5 @@
 ---
 layout: default
-title: mattrude.com XMPP Service Guides
+title: Guides
 permalink: /guides/
 ---

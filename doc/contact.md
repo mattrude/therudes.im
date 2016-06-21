@@ -1,6 +1,6 @@
 ---
 layout: default
 lang: en
-title: Contact Me
+title: Contact
 permalink: /contact/
 ---

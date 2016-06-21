@@ -1,6 +1,6 @@
 ---
 layout: default
-title: mattrude.com XMPP Service
+title: Home
 permalink: /
 ---
 
