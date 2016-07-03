@@ -1,11 +1,11 @@
 # Site settings
-title: mattrude.com XMPP Service
+title: The therudes.com XMPP Service
 email: matt@mattrude.com
 description: ""
-url: "//im.mattrude.com"
-name: "im.mattrude.com"
+url: "https://therudes.com"
+name: "therudes.com"
 baseurl: ""
-destination: "/var/www/im.mattrude.com"
+destination: "/var/www/im.therudes.com"
 
 owner_name: "Matt Rude"
 owner_pgpkey: "0xc4909ee495b0761f"
