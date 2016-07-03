@@ -3,11 +3,16 @@ layout: default
 title: News
 ---
 
+<h3>Service News Page</h3>
+
+<p>Below you will find news and the changelog for therudes.com XMPP service and site.</p>
+
 <div id="news">
 <ul>
   {% for post in site.posts %}
     <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a> - <small>{{ post.date | date: "%B %-d, %Y" }}</small></h2>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <span style="color:#777;font-size:0.9em;">{{ post.date | date: "%B %-d, %Y" }} | Post Category: {{ post.category }} | {{ post.author }}</span>
       {{ post.excerpt }}
     </li>
   {% endfor %}

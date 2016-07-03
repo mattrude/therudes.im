@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Supported XMPP Standards
-permalink: /supported-standards/
+permalink: /doc/supported-standards/
 ---
 
 This service supports the following XMPP standards.

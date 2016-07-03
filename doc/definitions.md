@@ -1,7 +1,7 @@
 ---
 layout: default
 title: XMPP Definitions
-permalink: /definitions/
+permalink: /doc/definitions/
 ---
 
 ## JID
@@ -9,3 +9,6 @@ A users unique XMPP address, is called a JID (or for historical reasons, sometim
 
 ## Transports
 One of the original design goals of the early Jabber open-source community was enabling users to connect to multiple non-XMPP messaging systems. This was done through *transports* or *gateways*.
+
+## XMPP server
+An XMPP server provides basic messaging, presence, and XML routing features. This page lists Jabber/XMPP server software that you can use to run your own XMPP service, either over the Internet or on a local area network.

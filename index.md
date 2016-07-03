@@ -4,11 +4,17 @@ title: Home
 permalink: /
 ---
 
-## About this Service
+This is the Rude Family XMPP service website.  A [XMPP]({{ site.url }}/doc/definitions/#xmpp-server) service provides chatting abuility via a local client.  By using this service, security in increased due to the settings and the fact this service is owned by me.
 
-This is the Rude Family XMPP service website.
+## How to use the service
 
-## About this Server
+This service requires the use of a client to connect to the server with.  Please see the [client list]({{ site.url }}/doc/client-list/) for a small list of avalable clients that may be used.
+
+## About: <small> This Service</small>
+
+An XMPP server provides basic messaging, presence, and XML routing features. This page lists Jabber/XMPP server software that you can use to run your own XMPP service, either over the Internet or on a local area network.
+
+## About: <small> This Server</small>
 
 This server is running [prosody](https://prosody.im) version {{ site.prosody-version }}. 
 
