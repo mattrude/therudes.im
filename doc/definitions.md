@@ -5,7 +5,7 @@ permalink: /doc/definitions/
 ---
 
 ## BOSH
-Bidirectional-streams Over Synchronous HTTP (BOSH) used to transport XMPP stanzas.  The result is an HTTP binding for XMPP communications that is useful in situations where a device or client is unable to maintain a long-lived TCP connection to an XMPP server.
+<b>B</b>idirectional-streams <b>O</b>ver <b>S</b>ynchronous <b>H</b>TTP (BOSH) used to transport XMPP [stanzas](#stanza).  The result is an HTTP binding for XMPP communications that is useful in situations where a device or client is unable to maintain a long-lived [TCP](#tcp) connection to an XMPP server.
 
 ## Domain
 
@@ -29,7 +29,7 @@ A users unique [XMPP](#xmpp-server) address, is called a JID (or for historical 
 ## SRV Records
 
 ## Stanza
-A group of lines forming the basic recurring metrical unit in XML; like a verse in a poem.
+A group of lines forming the basic recurring metrical unit in [XML](#xml); like a verse in a poem.
 
 ## TCP
 
