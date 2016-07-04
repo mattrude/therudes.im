@@ -24,19 +24,48 @@ A simple script would be
 ### Nginx Configuration
 
     #----------------------------------------------------------------------
-    # mattrude.com XMPP Service
+    # therudes.im XMPP Service
     #----------------------------------------------------------------------
 
-    # im.mattrude.com
+    # therudes.im
+    server {
+        listen 443 ssl http2;
+        listen [::]:443 ssl http2;
+        root /var/www/therudes.im;
+        server_name therudes.im;
+
+        ssl_certificate         /var/www/openssl/certs/therudes_im.crt;
+        ssl_certificate_key     /var/www/openssl/private/therudes_im.key;
+
+        location /favicon.ico { alias /var/www/therudes.im/img/favicon.ico; }
+        error_page 404 /404/index.html;
+
+        location /pastebin/ {
+            proxy_pass          http://therudes.com:5280;
+        }
+
+        location /status {
+            proxy_pass         http://therudes.com:5280;
+        }
+    }
+     
     server {
         listen 80;
         listen [::]:80;
-        listen <set your IP>11371;
-        listen [set your IPv6 IP]:11371;
-        server_name im.mattrude.com;
-        root /var/www/im.mattrude.com;
-    }
+        root /var/www/therudes.im;
+        server_name therudes.im;
 
+        location /favicon.ico { alias /var/www/therudes.im/img/favicon.ico; }
+        error_page 404 /404/index.html;
+
+        location /pastebin/ {
+            proxy_pass          http://therudes.com:5280;
+        }
+
+        location /status {
+            proxy_pass         http://therudes.com:5280;
+        }
+    }
 
 ### Installing Jekyll
 Since Jekyll only needs to be installed on your build system. Below are a few quick how-to's how setting up your build system.

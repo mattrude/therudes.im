@@ -4,7 +4,7 @@ title: Home
 permalink: /
 ---
 
-This is the **Rude Family's** XMPP services website.  This site is here to provide basic infromation on useing this service.  A [XMPP]({{ site.url }}/doc/definitions/#xmpp-server) service provides messaging ability via a local client.  By using this service, security in increased due to the settings and the fact this service is owned and ran by the users.
+This is the **Rude Family's** communication services website.  This site is here to provide basic infromation on useing this service.  A [XMPP]({{ site.url }}/doc/definitions/#xmpp-server) service provides messaging ability via a local client.  By using this service, security in increased due to the settings and the fact this service is owned and ran by the users.
 
 ## How to use the service
 

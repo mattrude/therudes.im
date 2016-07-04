@@ -4,7 +4,7 @@ title: Supported XMPP Standards
 permalink: /doc/supported-standards/
 ---
 
-This service supports the following XMPP standards.
+This service is running [Prosody]({{ site.url }}/doc/definitions/#prosody) version {{ site.prosody-version }} and supports the following XMPP standards.
 
 <table>
 	<thead>
