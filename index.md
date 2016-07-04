@@ -4,17 +4,17 @@ title: Home
 permalink: /
 ---
 
-This is the **Rude Family XMPP** service website.  A [XMPP]({{ site.url }}/doc/definitions/#xmpp-server) service provides chatting ability via a local client.  By using this service, security in increased due to the settings and the fact this service is owned by me.
+This is the **Rude Family's** XMPP service website.  A [XMPP]({{ site.url }}/doc/definitions/#xmpp-server) service provides chatting ability via a local client.  By using this service, security in increased due to the settings and the fact this service is owned and ran by the users.
 
 ## How to use the service
 
 This service requires the use of a client to connect to the server with.  Please see the [client list]({{ site.url }}/doc/client-list/) for a small list of available clients that may be used.  My personal preferred clients is [Swift](http://swift.im/) for desktop/laptops and [ChatSecure](https://guardianproject.info/apps/chatsecure/) for mobile.
 
-## About: <small> This Service</small>
+## About: <small>This Service</small>
 
-An XMPP server provides basic messaging, presence, and XML routing features. This page lists Jabber/XMPP server software that you can use to run your own XMPP service, either over the Internet or on a local area network.
+An XMPP server provides basic messaging, [presence]({{ site.url }}/doc/definitions/#presence), and XML routing features. This page lists Jabber/XMPP server software that you can use to run your own XMPP service, either over the Internet or on a local area network.
 
-## About: <small> This Server</small>
+## About: <small>This Server</small>
 
 This server is running [Prosody](https://prosody.im) version {{ site.prosody-version }} on [Ubuntu](http://www.ubuntu.com/) version 16.04 LTS.
 
