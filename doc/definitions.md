@@ -11,7 +11,7 @@ A users unique XMPP address, is called a JID (or for historical reasons, sometim
 
 ## Presence
 
-SRV Records
+## SRV Records
 
 ## TCP
 
