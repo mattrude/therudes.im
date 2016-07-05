@@ -74,6 +74,7 @@ A simple script would be
         listen [::]:80;
         root /var/www/therudes.im;
         server_name therudes.im;
+        server_name conference.therudes.im;
 
         location /favicon.ico { alias /var/www/therudes.im/img/favicon.ico; }
         error_page 404 /404/index.html;
