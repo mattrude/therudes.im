@@ -33,8 +33,8 @@ gems:
 - jekyll-sitemap
 - jekyll-less
 #- jekyll-press
-- jekyll-redirect-from
-- jekyll-last-modified-at
+#- jekyll-redirect-from
+#- jekyll-last-modified-at
 
 jekyll-press:
   exclude: 'robots.txt, contact.txt, contact-ecc.txt' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns

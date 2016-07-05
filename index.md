@@ -56,3 +56,5 @@ One of the benefits of communicating via XMPP is the level of security involved.
         <td><code>8F:54:F8:8B:C1:52:C3:40:E6:47:94:9D:DA:1E:1E:51:E5:92:FC:9F:79:A8:E3:2D:2E:84:1D:FC:F2:8B:7A:AD</code></td>
     </tr>
 </table>
+
+<a href='https://xmpp.net/result.php?domain=therudes.com&amp;type=client'><img src='https://xmpp.net/badge.php?domain=therudes.com' alt='xmpp.net score' /></a>
