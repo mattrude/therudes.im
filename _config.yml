@@ -5,7 +5,7 @@ description: ""
 url: "https://therudes.com"
 name: "therudes.com"
 baseurl: ""
-destination: "/var/www/im.therudes.com"
+destination: "/var/www/therudes.im"
 
 owner_name: "Matt Rude"
 owner_pgpkey: "0xc4909ee495b0761f"
@@ -30,9 +30,9 @@ exclude:
 - css/small.less
 
 gems:
-#- jekyll-sitemap
+- jekyll-sitemap
 - jekyll-less
-- jekyll-press
+#- jekyll-press
 - jekyll-redirect-from
 - jekyll-last-modified-at
 

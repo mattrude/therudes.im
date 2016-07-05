@@ -27,7 +27,6 @@ A simple script would be
     # therudes.im XMPP Service
     #----------------------------------------------------------------------
 
-    # therudes.im
     server {
         listen 443 ssl http2;
         listen [::]:443 ssl http2;
@@ -41,14 +40,35 @@ A simple script would be
         error_page 404 /404/index.html;
 
         location /pastebin/ {
-            proxy_pass          http://therudes.com:5280;
+            proxy_pass          http://conference.therudes.com:5280;
         }
 
         location /status {
-            proxy_pass         http://therudes.com:5280;
+            proxy_pass          http://therudes.com:5280;
         }
     }
      
+    server {
+        listen 443 ssl http2;
+        listen [::]:443 ssl http2;
+        root /var/www/therudes.im;
+        server_name conference.therudes.im;
+
+        ssl_certificate         /var/www/openssl/certs/conference_therudes_im.crt;
+        ssl_certificate_key     /var/www/openssl/private/conference_therudes_im.key;
+
+        location /favicon.ico { alias /var/www/therudes.im/img/favicon.ico; }
+        error_page 404 /404/index.html;
+
+        location /pastebin/ {
+            proxy_pass          http://conference.therudes.com:5280;
+        }
+
+        location /status {
+            proxy_pass          http://therudes.com:5280;
+        }
+    }
+    
     server {
         listen 80;
         listen [::]:80;
@@ -59,11 +79,11 @@ A simple script would be
         error_page 404 /404/index.html;
 
         location /pastebin/ {
-            proxy_pass          http://therudes.com:5280;
+            proxy_pass          http://conference.therudes.com:5280;
         }
 
         location /status {
-            proxy_pass         http://therudes.com:5280;
+            proxy_pass          http://therudes.com:5280;
         }
     }
 
