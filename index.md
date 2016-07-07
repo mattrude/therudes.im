@@ -4,19 +4,21 @@ title: Home
 permalink: /
 ---
 
-This is the **Rude Family's** communication services website.  This site is here to provide basic infromation on useing this service.  A [XMPP]({{ site.url }}/doc/definitions/#xmpp-server) service provides messaging ability via a local client.  By using this service, security in increased due to the settings and the fact this service is owned and ran by the users.
+This is the **Rude Family's** communication services website.  This site is here to provide basic infromation on using this service.  A [XMPP]({{ site.url }}/doc/definitions/#xmpp-server) service provides messaging ability via a local client.  By using this service, security in increased due to the settings and the fact this service is owned and ran by the users.
 
 ## How to use the service
 
 This service requires the use of a client to connect to the server with.  Please see the [client list]({{ site.url }}/doc/client-list/) for a small list of available clients that may be used.  My personal preferred clients is [Swift](http://swift.im/) for desktop/laptops and [ChatSecure](https://guardianproject.info/apps/chatsecure/) for mobile.
 
-## About: <small>This Service</small>
+## Services Provided
 
-An XMPP server provides basic messaging, [presence]({{ site.url }}/doc/definitions/#presence), and XML routing features. This page lists Jabber/XMPP server software that you can use to run your own XMPP service, either over the Internet or on a local area network.
+### Confrence Rooms
 
-## About: <small>This Server</small>
+This service provides confrence rooms via the mulit-user chats (MUC) interface documented in [XEP-0045](http://xmpp.org/extensions/xep-0045.html).  This service allows multiple users to join the same chat room or session at once and enabling all users in that room to comunicate freely.  Users may connect to these chat rooms via other [federated]({{ site.url }}/doc/definitions/#federation) XMPP servers, but only members of this server may create new rooms.
 
-This server is running [Prosody](https://prosody.im) version {{ site.prosody-version }} on [Ubuntu](http://www.ubuntu.com/) version 16.04 LTS.
+The confrence services URL is `conference.therudes.com`, the fingerprints are listed below.
+
+Please see the page [Using Confrences]({{ site.url }}/doc/using-confrences/) for more infromation on how to connect and use the confrencing service.
 
 ## Certificates Fingerprints
 
