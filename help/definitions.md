@@ -1,7 +1,7 @@
 ---
 layout: default
 title: XMPP Definitions
-permalink: /doc/definitions/
+permalink: /help/definitions/
 ---
 
 ## BOSH

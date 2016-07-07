@@ -9,7 +9,7 @@ tags: SSL Certs
 
 Today I added new SSL certificates to the service. 
 
-* These certificates will expire on **06-June-2016**.
+* These certificates will expire on **06-June-2017**.
 
 These services fingerprints are as following.
 

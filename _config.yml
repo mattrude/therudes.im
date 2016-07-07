@@ -10,6 +10,8 @@ destination: "/var/www/therudes.im"
 owner_name: "Matt Rude"
 owner_pgpkey: "0xc4909ee495b0761f"
 
+xmpp-url: "therudes.com"
+xmpp-conference-url: "conference.therudes.com"
 prosody-version: "0.9.10"
 
 # Analytics settings
