@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Client List
-permalink: /doc/client-list/
+permalink: /help/client-list/
 ---
 
 Below is an incomplete list of avalable clients for XMPP services.

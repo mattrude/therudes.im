@@ -11,6 +11,8 @@ permalink: /doc/definitions/
 
 ## DNS
 
+## Federation
+
 ## Gateway
 
 ## IP Address

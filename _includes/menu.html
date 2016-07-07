@@ -1,11 +1,18 @@
 <div id="menu">
     <a href="{{ site.url }}">Home</a>
+    | <a href="{{ site.url }}/about/">About</a>
+    | <a href="{{ site.url }}/help/">Help</a>
     | <a href="{{ site.url }}/doc/">Docs</a>{% for post in site.posts limit: 1 %}
     | <a href="{{ site.url }}/news/">News</a>{% endfor %}
 </div>{% if page.url contains 'doc' %}
 <div id="menu-sub">
     <a href="{{ site.url }}/doc/"><strong>Docs:</strong></a> | 
-    <a href="{{ site.url }}/doc/client-list/">Clients list</a> | 
     <a href="{{ site.url }}/doc/definitions/">Definitions</a> | 
     <a href="{{ site.url }}/doc/supported-standards/">Supported Standards</a>
+</div>{% endif %}{% if page.url contains 'help' %}
+<div id="menu-sub">
+    <a href="{{ site.url }}/help/"><strong>Help:</strong></a> |
+    <a href="{{ site.url }}/help/client-list/">Clients list</a> | 
+    <a href="{{ site.url }}/help/using-conferences/">Conferences</a> | 
+    <a href="{{ site.url }}/help/web-presence/">Web Presence</a>
 </div>{% endif %}

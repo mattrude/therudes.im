@@ -14,11 +14,19 @@ This service requires the use of a client to connect to the server with.  Please
 
 ### Confrence Rooms
 
-This service provides confrence rooms via the mulit-user chats (MUC) interface documented in [XEP-0045](http://xmpp.org/extensions/xep-0045.html).  This service allows multiple users to join the same chat room or session at once and enabling all users in that room to comunicate freely.  Users may connect to these chat rooms via other [federated]({{ site.url }}/doc/definitions/#federation) XMPP servers, but only members of this server may create new rooms.
+This service provides confrence rooms via the mulit-user chats (MUC) interface documented in [XEP-0045](http://xmpp.org/extensions/xep-0045.html).  The confrence room service allows multiple users to join the same chat room or session at once and enabling all users in that room to comunicate freely.  Users may connect to these chat rooms via other [federated]({{ site.url }}/doc/definitions/#federation) XMPP servers, but only members of this server may create new rooms.
 
 The confrence services URL is `conference.therudes.com`, the fingerprints are listed below.
 
-Please see the page [Using Confrences]({{ site.url }}/doc/using-confrences/) for more infromation on how to connect and use the confrencing service.
+Please see the page [Using Conferences]({{ site.url }}/help/using-conferences/) for more infromation on how to connect and use the confrencing service.
+
+### BOSH Service
+
+[XEP-0124](http://xmpp.org/extensions/xep-0124.html)
+
+### Web Presence
+
+Web Presence provides the status of a user via a image URL.  Please see the page [Web Presence]({{ site.url }}/help/web-presence/) for more infromation on how to use the web presence service.
 
 ## Certificates Fingerprints
 

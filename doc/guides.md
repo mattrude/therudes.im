@@ -6,7 +6,6 @@ permalink: /doc/
 
 ## Client Documents
 
-* [Client List]({{ site.url }}/doc/client-list/)
 * [Definitions]({{ site.url }}/doc/definitions/)
 
 ## Administrator Documents
