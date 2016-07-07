@@ -1,4 +1,4 @@
-# XMPP Site Source
+# Communication Service Website Source
 
 
 ## Jekyll
