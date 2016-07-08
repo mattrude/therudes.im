@@ -15,18 +15,19 @@ One of the benefits of communicating via XMPP is the level of security involved.
 <table style="width:100%;">
     <thead>
         <tr>
-                <th>conference.therudes.com <small> - SHA1 Fingerprint</small></th>
+                <th>{{ site.xmpp-conference-url }}<small> - SHA1 Fingerprint</small></th>
         </tr>
     </thead>
     <tr>
-        <td><code>35:3E:7B:63:89:B3:C6:6D:D7:32:70:C6:8B:27:92:A6:74:1C:98:96</code></td>
+        <td><code>{{ site.fingerprint-conference-sha1 }}</code></td>
     </tr>
     <thead>
         <tr>
-                <th>conference.therudes.com <small> - SHA256 Fingerprint</small></th>
+                <th>{{ site.xmpp-conference-url }}<small> - SHA256 Fingerprint</small></th>
         </tr>
     </thead>
     <tr>
-        <td><code>8F:54:F8:8B:C1:52:C3:40:E6:47:94:9D:DA:1E:1E:51:E5:92:FC:9F:79:A8:E3:2D:2E:84:1D:FC:F2:8B:7A:AD</code></td>
+        <td><code>{{ site.fingerprint-conference-sha256 }}</code></td>
     </tr>
+
 </table>
