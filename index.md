@@ -4,7 +4,7 @@ title: Home
 permalink: /
 ---
 
-This is the **{{ site.name }}** communication services website.  This site is here to provide basic infromation on using this service.  A [XMPP]({{ site.url }}/help/definitions/#xmpp-server) service provides messaging ability via a local client.  By using this service, security in increased due to the settings and the fact this service is owned and ran by the users.
+This is the **{{ site.name }}** communication service website.  This site is here to provide basic infromation on using this service.  A [XMPP]({{ site.url }}/help/definitions/#xmpp-server) service provides messaging ability via a local client.  By using this service, security in increased due to the settings and the fact this service is owned and ran by the users.{% if site.xep-0375 == 1%}  This service is in complete compliance with [XEP-0375](https://xmpp.org/extensions/xep-0375.html). The XEP-0375 document specifies the 2016 compliance levels for XMPP clients and servers.{% endif %}
 
 ## How to use the service
 
@@ -13,19 +13,54 @@ This service requires the use of a client to connect to the server with.  Please
 ## Connecting
 
 * Hostname: <b>{{ site.xmpp-url }}</b>
-* Port: <b>5222</b>
+* Port: <b>5222</b>{% if site.xmpp-conference-url and site.xep-0045 == 1 %}
+* Conference Rooms: <b>{{ site.xmpp-conference-url }}</b>{% endif %}
 
 ## Services Provided
 
-{% if site.xmpp-conference-url %}
-### Confrence Rooms
+{% if site.xmpp-conference-url and site.xep-0045 == 1 %}
+### Conference Rooms
 
-This service provides confrence rooms via the mulit-user chats (MUC) interface documented in [XEP-0045](http://xmpp.org/extensions/xep-0045.html).  The confrence room service allows multiple users to join the same chat room or session at once and enabling all users in that room to comunicate freely.  Users may connect to these chat rooms via other [federated]({{ site.url }}/help/definitions/#federation) XMPP servers, but only members of this server may create new rooms.
+This service provides conference rooms via the mulit-user chats (MUC) interface documented in [XEP-0045](http://xmpp.org/extensions/xep-0045.html).  The conference room service allows multiple users to join the same chat room or session at once and enabling all users in that room to comunicate freely.  Users may connect to these chat rooms via other [federated]({{ site.url }}/help/definitions/#federation) XMPP servers, but only members of this server may create new rooms.
 
-The confrence services URL is `{{ site.xmpp-conference-url }}`, the fingerprints are [listed below]({{ site.url }}/#certificates-fingerprints).
+The conference services URL is `{{ site.xmpp-conference-url }}`, the fingerprints are [listed below]({{ site.url }}/#certificates-fingerprints).
 
 Please see the page [Using Conferences]({{ site.url }}/help/using-conferences/) for more infromation on how to connect and use the confrencing service.
 {% endif %}
+
+{% if site.xep-0191 == 1 %}
+### Privacy Lists
+
+Privacy Lists provide a method for a user to block the receipt of messages (and packets), from a specific user or group of users.  Using the protocal layed out in [XEP-0191](https://xmpp.org/extensions/xep-0191.html) and [XEP-0016](https://xmpp.org/extensions/xep-0016.html), and depending on the client used, a user may block a [JID]({{ site.url }}/help/definitions/#jid) or a [domain]({{ site.url }}/help/definitions/#domain).
+{% endif %}
+
+### Offline Storage
+
+Offline Storage allows for the storage of offline messages to disk, ready to be delivered to users when the next log in.  This is implement using [XEP-0160](http://xmpp.org/extensions/xep-0160.html), [XEP-0203](http://xmpp.org/extensions/xep-0203.html) and [XEP-0091](http://xmpp.org/extensions/xep-0091.html) for backwards compatibility with older clients.
+
+{% if site.xep-0313 == 1 %}
+### Message Archive Management
+
+It is a common desire for users of XMPP to want to store their messages in a central archive on their server. This feature allows them to record conversations that take place on clients that do not support local history storage, to synchronise conversation history seamlessly between multiple clients, to read the history of a MUC room, or to view old items in a pubsub node.
+
+{% endif %}
+
+### vCards
+
+vCards are a online version of a business card, as implemented in [XEP-0054](http://xmpp.org/extensions/xep-0054.html). Users are not required to fill in a vCard and can supply as much or as little as they like.
+
+### Compression
+
+While the bandwidth usage of XMPP isn't great, compressing the data sent to/from your server can give significant benefits to those on slow connections, such as dial-up or mobile networks.
+
+Compression is enabled via [mod_compression](https://prosody.im/doc/modules/mod_compression) that implements [XEP-0138](http://xmpp.org/extensions/xep-0138.html), and supports the zlib compression algorithm.
+
+{% if site.xep-0357 == 1 %}
+### Push Notifications
+
+{% endif %}
+
+### File Transfer
 
 ### Web Presence
 
