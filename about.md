@@ -10,5 +10,4 @@ An XMPP server provides basic messaging, [presence]({{ site.url }}/help/definiti
 
 ## About: <small>This Server</small>
 
-This server is running [Prosody](https://prosody.im) version {{ site.prosody-version }} on [Ubuntu](http://www.ubuntu.com/) version 16.04 LTS.
-
+This server is running [Prosody](https://prosody.im) version {{ site.prosody-version }} on [Ubuntu](http://www.ubuntu.com/) version 16.04 LTS.  The phisical server is located in Minneapolis, Minnesota, USA.

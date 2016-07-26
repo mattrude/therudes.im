@@ -4,6 +4,7 @@ title: Using Conferences
 permalink: /help/using-conferences/
 ---
 
+{% if site.xmpp-conference-url %}
 ## Connecting from a federated XMPP server
 
 By default the server will try to use [TLS]({{ site.url }}/help/definitions/#tls) if the other side supports it, and fall back to [dialback]({{ site.url }}/help/definitions/#dialback) if it does not or if the certificate is incorrect or not trusted.
@@ -31,3 +32,6 @@ One of the benefits of communicating via XMPP is the level of security involved.
     </tr>
 
 </table>
+{% else %}
+This server dose not support conferences, sorry.
+{% endif %}
