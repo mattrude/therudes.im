@@ -14,7 +14,7 @@
     <a href="{{ site.url }}/help/"><strong>Help:</strong></a> |
     <a href="{{ site.url }}/help/client-list/">Clients list</a> | 
     <a href="{{ site.url }}/help/definitions/">Definitions</a> | 
-    <a href="{{ site.url }}/help/generic-configuration/">Generic Configuration</a> | 
-    <a href="{{ site.url }}/help/using-conferences/">Conferences</a> | 
+    <a href="{{ site.url }}/help/generic-configuration/">Generic Configuration</a> | {% if site.xmpp-conference-url and site.xep-0045 == 1 %}
+    <a href="{{ site.url }}/help/using-conferences/">Conferences</a> | {% endif %}
     <a href="{{ site.url }}/help/web-presence/">Web Presence</a>
 </div>{% endif %}

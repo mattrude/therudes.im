@@ -58,9 +58,18 @@ Compression is enabled via [mod_compression](https://prosody.im/doc/modules/mod_
 {% if site.xep-0357 == 1 %}
 ### Push Notifications
 
+The purpose of push notifications ([XEP-0357](https://xmpp.org/extensions/xep-0357.html)) is to inform users of new messages or other pertinent information even when they have no XMPP clients online.
+
+Typically, these notifications are delivered to a user's mobile device, displaying a notice that can trigger opening an XMPP client to continue a conversation or answer a Jingle session request.
+
 {% endif %}
 
+{% if site.xep-0065 == 1 %}
 ### File Transfer
+
+File Transfer ([XEP-0065](https://xmpp.org/extensions/xep-0065.html)) allows the server to proxy file transfers between 2 clients that are behind NAT routers or firewalls, and otherwise wouldn't be able to transfer files.
+
+{% endif %}
 
 ### Web Presence
 
@@ -72,7 +81,7 @@ Web Presence provides the status of a user via a image URL.  Please see the page
 * The backend is configured to store hashed and salted authentication data
 * Use Off-the-Record (OTR) in your chat client to have fully encrypted chats
 
-{% if site.fingerprints %}
+{% if site.fingerprints == 1 %}
 ### Certificates Fingerprints
 
 One of the benefits of communicating via XMPP is the level of security involved.  To allow users to validate the servers they are connecting to, below is the current fingerprints for each domain name.
@@ -80,7 +89,7 @@ One of the benefits of communicating via XMPP is the level of security involved.
 <div id="cert-table">
 {% if site.fingerprint-sha1 %}
   <div class="cert-title">
-    <b>{{ site.baseurl }}<small> - SHA1 Fingerprint</small></b>
+    <b>{{ site.xmpp-url }}<small> - SHA1 Fingerprint</small></b>
   </div>
   <div class="cert-content">
     <pre>{{ site.fingerprint-sha1 }}</pre>
@@ -88,7 +97,7 @@ One of the benefits of communicating via XMPP is the level of security involved.
 {% endif %}
 {% if site.fingerprint-sha256 %}
   <div class="cert-title">
-    <b>{{ site.baseurl }}<small> - SHA256 Fingerprint</small></b>
+    <b>{{ site.xmpp-url }}<small> - SHA256 Fingerprint</small></b>
   </div>
   <div class="cert-content">
     <pre>{{ site.fingerprint-sha256 }}</pre>

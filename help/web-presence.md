@@ -7,7 +7,7 @@ Web Presence provides the status of a user via a image URL.  It is enabled by de
 
 ### Using Web Presence Image
 
-To use web presence, just add the below image url to a site or email.  The userid entry is your userid or the left part after the `@` sign of your JID.  So if your JID is `odin@{{ site.xmpp-url }}` then your userid will be `odin`.
+To use web presence, just add the below image url to a site or email.  The userid entry is your userid or the left part after the `@` sign of your [JID]({{ site.url }}/help/definitions/#jid).  So if your JID is `odin@{{ site.xmpp-url }}` then your userid will be `odin`.
 
     <img src="{{ site.url }}/status/userid" />
 
