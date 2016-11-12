@@ -14,7 +14,8 @@ This service requires the use of a client to connect to the server with.  Please
 
 * Hostname: <b>{{ site.xmpp-url }}</b>
 * Port: <b>5222</b>{% if site.xmpp-conference-url and site.xep-0045 == 1 %}
-* Conference Rooms: <b>{{ site.xmpp-conference-url }}</b>{% endif %}
+* Conference Rooms: <b>{{ site.xmpp-conference-url }}</b>{% endif %}{% if site.xmpp-proxy-url %}
+* Socks 5 Proxy: <b>{{ site.xmpp-proxy-url }}</b>{% endif %}
 
 ## Services Provided
 
@@ -25,7 +26,7 @@ This service provides conference rooms via the mulit-user chats (MUC) interface 
 
 The conference services URL is `{{ site.xmpp-conference-url }}`, the fingerprints are [listed below]({{ site.url }}/#certificates-fingerprints).
 
-Please see the page [Using Conferences]({{ site.url }}/help/using-conferences/) for more infromation on how to connect and use the confrencing service.
+Please see the page [Using Conferences]({{ site.url }}/help/using-conferences/) for more infromation on how to connect and use the conferencing service.
 {% endif %}
 
 {% if site.xep-0191 == 1 %}

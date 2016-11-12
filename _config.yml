@@ -37,7 +37,8 @@ exclude:
 
 gems:
 - jekyll-sitemap
-- jekyll-less
+- jekyll-minifier
+#- jekyll-less
 #- jekyll-press
 #- jekyll-redirect-from
 #- jekyll-last-modified-at

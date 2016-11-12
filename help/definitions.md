@@ -15,6 +15,27 @@ permalink: /help/definitions/
 
 ## Federation
 
+<b>Federation</b> is the method used by XMPP servers to connect to other XMPP server to allow users from one server to chat with users on other server.
+
+The following diagram provides a high-level overview of this architecture (where `-` represents communications that use XMPP and `=` represents communications that use any other protocol).
+
+<pre><code>        C1
+        |
+   C2---S1---C3
+        |
+   C4---S2---G1===FN1===FC1
+        |
+        C5
+</code></pre>
+
+The symbols are as follows:
+
+* C1, C2, C3, C4, C5 = XMPP clients
+* S1, S2 = XMPP servers
+* G1 = A gateway that translates between XMPP and the protocol(s) used on a foreign (non-XMPP) messaging network
+* FN1 = A foreign messaging network
+* FC1 = A client on a foreign messaging network
+
 ## Gateway
 
 ## IP Address
