@@ -1,6 +1,5 @@
 # Communication Service Website Source
 
-
 ## Jekyll
 
 [Jekyll](http://jekyllrb.com/) is a static site generator built in [Ruby on Rails](http://rubyonrails.org/). With this approach, you are able to build a high power build site, using a low power, very stable webserver running a static site.
